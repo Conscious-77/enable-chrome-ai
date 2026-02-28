@@ -41,10 +41,10 @@ App 版说明：
 
 由于该工具是为 `Gemini in Chrome` 侧边栏能力做本地配置修复，最终是否可用仍取决于 Google 服务侧条件与灰度策略。
 
-- **网络与地区**：需要可访问 Google 服务；官方可用范围以美国地区为主。
+- **网络与地区（重要）**：必须使用美国网络环境。若使用代理/🪜，请确认出口节点 `location` 为 `United States`，否则即使本地配置正确也可能不显示 Gemini in Chrome。
 - **账号与年龄**：需登录 Chrome 账号，通常要求 18 岁及以上。
 - **系统与浏览器**：建议使用 macOS / Windows + 最新版 Chrome。
-- **语言设置**：Chrome 语言建议设为 `English (United States)`。
+- **语言设置**：Chrome 语言建议设为 `English (United States)`。可仅针对 Chrome 修改：`Chrome 右上角 ⋮ -> Settings -> Languages -> Preferred languages -> Add languages -> English (United States) -> Move to top`，然后重启 Chrome。
 - **企业账号**：工作/学校账号可能需要管理员开启相关能力。
 - **灰度发布**：即使满足条件，也可能因 Google 分批放量而暂时不可见。
 
