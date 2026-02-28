@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# macOS files
+.DS_Store
+
+# Local build artifacts
+dist-self-contained/
+*.spec
+
+# Optional local archives
+*.zip
