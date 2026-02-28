@@ -37,6 +37,19 @@ App 版说明：
 - 可能会弹出“控制 Terminal”的系统授权，请点“允许”（用于在 Terminal 中执行脚本）。
 - 建议使用拥有 Chrome 用户配置写权限的同一 macOS 用户运行。
 
+## 使用条件（网络 / 账号 / Chrome）
+
+由于该工具是为 `Gemini in Chrome` 侧边栏能力做本地配置修复，最终是否可用仍取决于 Google 服务侧条件与灰度策略。
+
+- **网络与地区**：需要可访问 Google 服务；官方可用范围以美国地区为主。
+- **账号与年龄**：需登录 Chrome 账号，通常要求 18 岁及以上。
+- **系统与浏览器**：建议使用 macOS / Windows + 最新版 Chrome。
+- **语言设置**：Chrome 语言建议设为 `English (United States)`。
+- **企业账号**：工作/学校账号可能需要管理员开启相关能力。
+- **灰度发布**：即使满足条件，也可能因 Google 分批放量而暂时不可见。
+
+说明：本项目主要修改本地 `Local State` 配置（如 `variations_country`、`is_glic_eligible`），不保证绕过服务端资格校验。
+
 ## 源码说明
 
 仓库采用“根目录文档 + `source/` 实现代码”结构：
@@ -51,3 +64,5 @@ App 版说明：
 ## 参考来源
 
 - 原始项目：<https://github.com/lcandy2/enable-chrome-ai/?tab=readme-ov-file>
+- Google 帮助（Use Gemini in Chrome）：<https://support.google.com/gemini/answer/16283624>
+- Google Chrome Enterprise 文档（Gemini in Chrome）：<https://support.google.com/chrome/a/answer/16291696>
